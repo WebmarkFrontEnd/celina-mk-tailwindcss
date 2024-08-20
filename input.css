@@ -1,8 +1,10 @@
 @tailwind base;
 @tailwind components;
 
-.btn {
-  @apply bg-green-500 text-white px-5 py-5 text-sm;
-}
-
 @tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply bg-primary text-white px-5 py-5 text-sm;
+  }
+}
