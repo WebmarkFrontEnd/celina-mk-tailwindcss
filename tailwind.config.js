@@ -10,7 +10,18 @@ module.exports = {
       xl: '1280px',
       '2xl': '1600px',
     },
-    conainer: {},
+    container: {
+      center: true,
+      screens: {
+        xs: '302px',
+        sm: '462px',
+        md: '608px',
+        lg: '90%',
+        xl: '90%',
+        '2xl': '90%',
+        '3xl': '1396px',
+      },
+    },
 
     // colors: {
     //   primary: '#000',
@@ -21,6 +32,17 @@ module.exports = {
       colors: {
         primary: '#000',
         secondary: '#111',
+      },
+      fontSize: {
+        sm: {
+          base: '16px',
+          sm: '18px',
+          md: '20px',
+          lg: '22px',
+          xl: '24px',
+          '2xl': '26px',
+          '3xl': '2rem',
+        },
       },
     },
   },
