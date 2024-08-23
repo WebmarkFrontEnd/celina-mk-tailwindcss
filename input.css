@@ -4,7 +4,39 @@
 @tailwind utilities;
 
 @layer components {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply font-altivo text-primary font-light uppercase;
+  }
+
+  p {
+    @apply font-bai text-primary font-normal;
+  }
+
   .btn {
-    @apply bg-primary text-white px-5 py-5 text-sm;
+    @apply px-[20px] py-[10px] text-base font-altivo border-2 border-secondary inline-block bg-secondary text-light rounded-full uppercase hover:bg-primary hover:border-primary;
+  }
+
+  .btn-dark {
+    @apply bg-primary text-light border-primary hover:bg-secondary hover:border-secondary;
+  }
+
+  .btn-light {
+    @apply bg-light text-dark border-light hover:bg-secondary hover:border-secondary;
+  }
+}
+
+/* Container */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 90%;
+  }
+}
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1396px;
   }
 }

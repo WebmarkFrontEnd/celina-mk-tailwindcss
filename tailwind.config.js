@@ -3,12 +3,13 @@ module.exports = {
   content: ['*'],
   theme: {
     screens: {
-      xs: '375',
+      xs: '375px',
       sm: '575px',
       md: '768px',
       lg: '1024px',
       xl: '1280px',
-      '2xl': '1600px',
+      '2xl': '1440px',
+      '3xl': '1600px',
     },
     container: {
       center: true,
@@ -16,34 +17,26 @@ module.exports = {
         xs: '302px',
         sm: '462px',
         md: '608px',
-        lg: '90%',
-        xl: '90%',
-        '2xl': '90%',
-        '3xl': '1396px',
+        // lg: '90%',
+        // xl: '90%',
+        // '2xl': '90%',
+        // '3xl': '1396px',
       },
     },
 
-    // colors: {
-    //   primary: '#000',
-    //   secondary: '#111',
-    // },
+    fontFamily: {
+      altivo: ['altivo', 'sans-serif'],
+      bai: ['bai-jamjuree', 'sans-serif'],
+    },
 
     extend: {
       colors: {
-        primary: '#000',
-        secondary: '#111',
+        primary: '#53514D',
+        secondary: '#7B9645',
+        dark: '#706B6B',
+        light: '#fff',
       },
-      fontSize: {
-        sm: {
-          base: '16px',
-          sm: '18px',
-          md: '20px',
-          lg: '22px',
-          xl: '24px',
-          '2xl': '26px',
-          '3xl': '2rem',
-        },
-      },
+      fontSize: {},
     },
   },
   plugins: [],
